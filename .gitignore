@@ -1,0 +1,14 @@
+.idea
+*.pyc
+*.so
+
+*.pth
+*.pkl
+*.npy
+
+*.swp
+
+*~
+__pycache__/
+datasets/*
+checkpoints/

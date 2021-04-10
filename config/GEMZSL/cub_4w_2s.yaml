@@ -1,0 +1,40 @@
+OUTPUT_DIR: "checkpoints/cub_4w_2s_6"
+LOG_FILE_NAME: "GEM.log"
+MODEL_FILE_NAME: "best_model.pth"
+MODEL:
+  META_ARCHITECTURE: "GEMModel"
+  SCALE: 20.0
+  BACKBONE:
+    PRETRAINED: True
+  ATTENTION:
+    CHANNEL: 512
+    WEIGHT_SHARED: True
+    W2V_PATH: "datasets/Attribute/w2v"
+  LOSS:
+    LAMBDA1: 1.0
+    LAMBDA2: 0.1
+    LAMBDA3: 0.2
+
+DATASETS:
+  NAME: "CUB"
+  IMAGE_SIZE: 448
+  WAYS: 4
+  SHOTS: 2
+
+DATALOADER:
+  MODE: 'episode'
+  N_BATCH: 300
+
+SOLVER:
+  MAX_EPOCH: 15
+  BASE_LR: 1e-3
+  WEIGHT_DECAY: 1e-5
+  MOMENTUM: 0.9
+  GAMMA: 0.5
+  STEPS: 10
+  DATA_AUG: "resize_random_crop"
+
+TEST:
+  IMS_PER_BATCH: 100
+  DATA_AUG: "resize_crop"
+  GAMMA: 0.7
