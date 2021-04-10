@@ -104,7 +104,7 @@ _C.TEST.GAMMA = 0.7
 _C.OUTPUT_DIR = "."
 _C.LOG_FILE_NAME = ""
 _C.MODEL_FILE_NAME = ""
-_C.PRETRAINED_MODELS = ""
+_C.PRETRAINED_MODELS = "./pretrained_models"
 
 
 # ---------------------------------------------------------------------------- #
