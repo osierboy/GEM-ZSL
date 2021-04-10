@@ -3,7 +3,7 @@ from os.path import join
 import sys
 import argparse
 
-sys.path.append("/home/g203-server2/ly/ZSL/GEM-ZSL")
+sys.path.append("/home/ly/ZSL/GEM-ZSL")
 
 import torch
 import numpy as np
