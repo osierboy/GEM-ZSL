@@ -204,11 +204,6 @@ def build_GEMNet(cfg):
 
     # res101 feature size
     c,w,h = 2048, img_size//32, img_size//32
-    # prototype_shape = (attritube_num, c, 1, 1)  # 卷积 or 矩阵操作
-    # prototype_shape = (attritube_num, c)  # 卷积 or 矩阵操作
-    # attention_channel = cfg.MODEL.ATTENTION.CHANNEL
-    # weight_shared = cfg.MODEL.ATTENTION.WEIGHT_SHARED
-    temp = cfg.MODEL.LOSS.TEMP
 
     scale = cfg.MODEL.SCALE
 
