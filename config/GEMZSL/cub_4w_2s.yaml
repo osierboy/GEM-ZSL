@@ -1,4 +1,4 @@
-OUTPUT_DIR: "checkpoints/cub_4w_2s_6"
+OUTPUT_DIR: "checkpoints/cub_4w_2s"
 LOG_FILE_NAME: "GEM.log"
 MODEL_FILE_NAME: "best_model.pth"
 MODEL:
