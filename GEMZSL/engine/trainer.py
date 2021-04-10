@@ -76,7 +76,6 @@ def do_train(
             batch_att = batch_att.to(device)
             batch_label = batch_label.to(device)
 
-            # loss_dict = model(x=batch_img, att=batch_att, label=batch_label, seen_att=att_seen, i=epoch)
             loss_dict = model(x=batch_img, att=batch_att, label=batch_label, seen_att=att_seen,)
 
             Lreg = loss_dict['Reg_loss']
