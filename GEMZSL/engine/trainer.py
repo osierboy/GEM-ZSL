@@ -105,7 +105,6 @@ def do_train(
             # Otherwise apply loss scaling for mixed-precision recipe
             with amp.scale_loss(loss, optimizer) as scaled_losses:
                 scaled_losses.backward()
-            # loss.backward()
             optimizer.step()
 
             loss_epoch.append(losses_reduced.item())
