@@ -11,9 +11,10 @@ If you use our work in your research please cite us:
 
 ```BibTeX
 @inproceedings{liu2021goal,
-	title={Goal-Oriented Gaze Estimation for Zero-Shot Learning},
-	author={Liu, Yang and Zhou, Lei and Bai, Xiao and Huang, Yifei and Gu, Lin and Zhou, Jun and Harada, Tatsuya},
-	booktitle={CVPR},
-	year={2021}
+  title={Goal-oriented gaze estimation for zero-shot learning},
+  author={Liu, Yang and Zhou, Lei and Bai, Xiao and Huang, Yifei and Gu, Lin and Zhou, Jun and Harada, Tatsuya},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3794--3803},
+  year={2021}
 }
 ```
